@@ -1,0 +1,25 @@
+.bloom-text.header {
+    color: #FA9CAB;
+    font-size: calc(10px + 3vmin);
+}
+
+.bloom-text.header-sub {
+    color: #FFAEBC;
+    font-size: calc(10px + 2vmin);
+}
+
+.bloom-text.header-link {
+    color: #FA9CAB;
+    font-size: calc(10px + 1vmin);
+}
+
+.bloom-text.title {
+    justify-content: center;
+    color: #BF3880;
+    font-size: calc(10px + 3vmin);
+    font-family: monospace;
+}
+.bloom-text.button-link{
+    color:#BF3880;
+    font-size: calc(10px + 1vmin);
+}

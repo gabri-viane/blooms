@@ -1,0 +1,143 @@
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+    animation: App-logo-pulse 1s linear 0ms 1 forwards, App-logo-move 2s linear 1s infinite alternate;
+}
+
+.App-intro {
+    animation-name: App-intro-slide-in;
+    animation-duration: 1500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.App-outro {
+    animation-name: App-outro-slide-out;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.App-logo-outro {
+    height: 40vmin;
+    animation-name: App-logo-slide-out;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.App-intro-delayed {
+    visibility: hidden;
+    display: inline-block;
+    animation-name: App-intro-delayed-slide-in;
+    animation-duration: 1500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.card-intro {
+    visibility: hidden;
+    display: inline-block;
+    animation-name: App-intro-delayed-slide-in;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.navbar-title-intro {
+    visibility: hidden;
+    display: inline-block;
+    animation-name: App-intro-slide-left;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes App-logo-pulse {
+    from {
+        transform: scale(80%);
+    }
+
+    to {
+        transform: scale(100%);
+    }
+}
+
+@keyframes App-logo-move {
+    from {
+        transform: translate(0px, 0px);
+    }
+
+    to {
+        transform: translate(0px, 20px);
+    }
+}
+
+@keyframes App-intro-slide-in {
+    from {
+        opacity: 0%;
+        transform: translate(0px, -20px);
+    }
+
+    to {
+        opacity: 100%;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes App-intro-slide-left {
+    from {
+        visibility: visible;
+        opacity: 0%;
+        transform: translate(-20px, 0px);
+    }
+
+    to {
+        visibility: visible;
+        opacity: 100%;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes App-logo-slide-out {
+    from {
+        opacity: 100%;
+        transform: translate(0px, 0px) scale(100%);
+    }
+
+    to {
+        opacity: 0%;
+        transform: translate(0px, -100px) scale(80%);
+    }
+}
+
+@keyframes App-outro-slide-out {
+    to {
+        opacity: 0%;
+        transform: translate(0px, -20px);
+    }
+
+    from {
+        opacity: 100%;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes App-intro-delayed-slide-in {
+    from {
+        visibility: visible;
+        opacity: 0%;
+        transform: translate(0px, -20px);
+    }
+
+    to {
+        visibility: visible;
+        opacity: 100%;
+        transform: translate(0px, 0px);
+    }
+}
